@@ -77,6 +77,8 @@ class Student
   end
 
   def self.first_X_students_in_grade_10
+    sql = <<-SQL
 
+    SQL
   end
 end
