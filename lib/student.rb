@@ -15,9 +15,13 @@ class Student
     SQL
   end
 
+  def self.new_from_db
+
+  end
+
   def self.find_by_name(name)
     sql = <<-SQL
-      SELECT * FROM students 
+      SELECT * FROM students
       WHERE name = ?
       LIMIT 1
     SQL
