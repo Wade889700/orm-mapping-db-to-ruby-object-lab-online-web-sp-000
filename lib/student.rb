@@ -2,7 +2,10 @@ class Student
   attr_accessor :id, :name, :grade
 
   def self.new_from_db(row)
-    # create a new Student object given a row from the database
+    student = self.new(row)
+    student.id = id 
+    student.name = name 
+    student.grade = grade
   end
 
   def self.all
